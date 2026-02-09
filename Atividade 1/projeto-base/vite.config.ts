@@ -4,19 +4,22 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  // Define o caminho relativo para o GitHub Pages não se perder nas pastas
+  base: './', 
   plugins: [
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
   resolve: {
     alias: {
-      // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
     },
   },
-
-  // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
+  build: {
+    // Aqui está o segredo: ele joga o site pronto direto na pasta da atividade
+    outDir: '../Atividade 1', 
+    // Garante que a pasta de destino seja limpa antes de cada build
+    emptyOutDir: true, 
+  },
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })

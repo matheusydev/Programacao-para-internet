@@ -1,16 +1,18 @@
+import alvaroAssets from "../assets/alvaroAssets.webp"
+import matheusAssets from "../assets/matheusAssets.webp"
 import { Mail, Linkedin, Github, Heart, Target, Users } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Ana Silva",
+    name: "Álvaro Miguel",
     role: "Designer de UI/UX",
-    imageUrl: "https://images.unsplash.com/photo-1623594675959-02360202d4d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHNtaWxpbmclMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzA0Njc0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    bio: "Apaixonada por criar experiências digitais que conectam pessoas e pets. Especialista em design centrado no usuário com 5 anos de experiência.",
+    imageUrl: alvaroAssets, 
+    bio: "Apaixonado por criar experiências digitais...",
   },
   {
-    name: "Carlos Santos",
-    role: "Desenvolvedor Front-end",
-    imageUrl: "https://images.unsplash.com/photo-1651684215020-f7a5b6610f23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzcwNTc4MTkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    name: "Matheus Ylan",
+    role: "Desenvolvedor Fullstack",
+    imageUrl: matheusAssets,
     bio: "Desenvolvedor fullstack dedicado a construir plataformas que fazem a diferença. Entusiasta de React e tecnologias modernas de desenvolvimento web.",
   },
 ];

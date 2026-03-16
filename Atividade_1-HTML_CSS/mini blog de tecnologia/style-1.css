@@ -1,0 +1,26 @@
+body{
+font-family: Arial;
+background-color:#BFB78F;
+color:#011F26;
+text-align:center;
+}
+
+h1{
+background-color:#025E73;
+color:white;
+padding:20px;
+}
+
+h2{
+color:#025E73;
+}
+
+.autor{
+color:#A5A692;
+font-size:14px;
+}
+
+.separador{
+font-size:20px;
+color:#025E73;
+}

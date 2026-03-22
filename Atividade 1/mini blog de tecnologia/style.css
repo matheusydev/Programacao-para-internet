@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #A5A692;
+}
+
+
+#titulo{
+    color: #FFFFFF;
+    background-color: #011F26;
+    text-align: center;
+}
+
+.titulo-post{
+    color: #025E73;
+}
+
+.autor {
+    background-color: #BFB78B;
+    text-align: right;
+}
+
+.separador {
+    text-align: center;
+    color: #025E73;
+    font-size: 18px;
+}
+
+.botao{
+    text-align: center;
+}
+
+button{
+    background-color: #025E73; 
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}

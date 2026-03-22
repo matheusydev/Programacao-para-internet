@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9; 
+}
+
+
+#titulo{
+    color: #FFFFFF;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #555555);
+}
+
+
+.titulo-post{
+    color: #333333; 
+}
+
+
+p{
+    color: #000000;
+}
+
+.autor {
+    background-color: #bfbfbf; 
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+.separador {
+    text-align: center;
+    color: #333333;
+    font-size: 18px;
+}
+

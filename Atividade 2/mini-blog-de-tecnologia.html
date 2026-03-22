@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Mini Blog de Tecnologia</title>
-
-<link id="tema" rel="stylesheet" href="style-1.css">
-
-<script>
-
-let estilo = 1;
-
-function trocarTema(){
-
-if(estilo == 1){
-document.getElementById("tema").href="style-1.css"
-estilo = 2
-}
-
-else if(estilo == 2){
-document.getElementById("tema").href="style-2.css"
-estilo = 3
-}
-
-else{
-document.getElementById("tema").href="style-3.css"
-estilo = 1
-}
-
-}
-
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog de Tecnologia</title>
+    <link id="tema" rel="stylesheet" href="style-blackwhite.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
 
-<button onclick="trocarTema()">Trocar Tema</button>
+    <div class="container">
 
-<h1>Mini Blog de Tecnologia</h1>
+        <h1 id="titulo">Mini Blog de Tecnologia</h1>
 
-<h2>O futuro da Inteligência Artificial</h2>
-<p>A inteligência artificial está transformando a forma como desenvolvemos software.</p>
-<p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+        <div class="post">
+            <h2 class="titulo-post">Primeiros passos com HTML</h2>
+            <p>HTML é a base das páginas web. Com ele organizamos títulos, textos e a estrutura do conteúdo apresentado no navegador.</p>
+            <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+            <p class="separador">&#9733; &#9733; &#9733; </p>
+        </div>
 
-<p class="separador">&#9733; &#9733; &#9733;</p>
+        <div class="post">
+            <h2 class="titulo-post">O papel do CSS</h2>
+            <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tornando os sites mais agradáveis visualmente.</p>
+            <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+            <p class="separador">&#9733; &#9733; &#9733; </p>
+        </div>
 
-<h2>Aprendendo HTML e CSS</h2>
-<p>HTML cria a estrutura e CSS define a aparência.</p>
-<p class="autor">Autor: Ely Miranda | Data: 10/03/2026</p>
+        <div class="post">
+            <h2 class="titulo-post">Validação do código</h2>
+            <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomendados para o desenvolvimento web.</p>
+            <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+            <p class="separador">&#9733; &#9733; &#9733; </p>
+        </div>
 
-<p class="separador">&#9733; &#9733; &#9733;</p>
-
+        <div class="botao">
+            <button onclick="trocarTema()">Trocar Tema</button>
+        </div>
+        
+    </div>
 </body>
 </html>

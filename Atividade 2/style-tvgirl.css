@@ -1,16 +1,20 @@
 body{
     font-family: Arial, sans-serif;
     background-color: #1a2c75;
+    font-size: 1rem;
 }
 
 #titulo{
     color: #FFFFFF;
     background-color: #740645;
     text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
 }
 
 .titulo-post{
     color: 	#ed2788;
+    font-size: 1.5rem;
 }
 
 p{
@@ -25,19 +29,4 @@ p{
     text-align: center;
     color: 	#ed2788;
     font-size: 18px;
-}
-
-.botao{
-    text-align: center;
-}
-
-button{
-    background-color: #ed2788; 
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
 }

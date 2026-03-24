@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap');
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1a2c75;
+    font-size: 1rem;
+}
+
+#titulo{
+    color: #FFFFFF;
+    background-color: #740645;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+.titulo-post{
+    color: 	#ed2788;
+    font-size: 1.5rem;
+}
+
+p{
+    color:#ed2788;
+}
+.autor {
+    background-color: #0f479f;
+    text-align: right;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.separador {
+    text-align: center;
+    color: 	#ed2788;
+    font-size: 18px;
+}
+
+pre{
+    color: #ed2788;
+}
+
+.tiltneon{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.p1-normal{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700; 
+}
+
+.p2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900; 
+}
+
+.p3-normal{
+   font-family: "Comic Sans MS", "Comic Sans", cursive;
+   font-style: normal;
+}
+
+.p3{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-style: oblique 10;
+}
+
+.p4{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-style: oblique 20;
+}

@@ -22,6 +22,11 @@ body{
 p{
     color:#ed2788;
 }
+
+h3{
+    color:#ed2788;
+}
+
 .autor {
     background-color: #0f479f;
     text-align: right;
@@ -72,4 +77,8 @@ pre{
 .p4{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-style: oblique 20;
+}
+
+.img-teste {
+width: 300px;
 }

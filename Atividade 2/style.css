@@ -82,3 +82,72 @@ pre{
 .img-teste {
 width: 300px;
 }
+
+ol {
+    color: #e5e7eb;
+    list-style-position: inside;
+    max-width: 400px;
+    margin: auto;
+}
+
+li {
+    background: #374151;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    transition: 0.2s;
+    list-style-type: decimal; 
+}
+
+li:hover {
+    transform: translateX(6px);
+    background: #4b5563;
+    cursor: pointer;
+}
+
+li:first-child::before {
+    content: "🏆 ";
+}
+
+.post-tv-girl li:first-child::before {
+    content: none; 
+}
+
+.post-tv-girl .card-album {
+    background-color: #740645;
+    list-style-type: none; 
+}
+
+.post-tv-girl .card-album:hover {
+    background-color: #ed2788; 
+}
+
+.album-item {
+    font-weight: bold;
+    color: #0f479f; 
+    display: block;
+}
+
+.lista-musicas {
+    list-style-type: none; 
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.lista-musicas li {
+    background: transparent; 
+    margin: 5px 0;
+    padding: 5px;
+    color: #0f479f;
+}
+
+.ouvido {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.lista-musicas li::before {
+    content: "🎵 ";
+}

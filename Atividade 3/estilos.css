@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Neon&display=swap');
 
+:root {
+    --color-primary: rgb(58, 57, 57);
+    --color-secondary: gray;
+    --color-bg-gradient: linear-gradient(to left, rgb(73, 70, 70), rgb(164, 162, 162), rgb(73, 70, 70));
+    --color-text-light: white;
+    --color-text-dark: black;
+    --color-card-bg: white;
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 30px;
+    --space-xl: 40px;
+    --radius-md: 10px;
+    --shadow-dark: 5px 5px 15px 5px #000000;
+    --shadow-footer: -5px -5px 10px 10px #313131;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +23,8 @@
 }
 
 body {
-    color: white;
-    background-image: linear-gradient(to left, rgb(73, 70, 70), rgb(164, 162, 162), rgb(73, 70, 70));
+    color: var(--color-text-light);
+    background-image: var(--color-bg-gradient);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -33,14 +49,12 @@ aside {
 }
 
 .card {
-    border: 1px dotted gray;
-    background-color: white;
-    color: black;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    border-radius: 10px;
+    background-color: var(--color-card-bg);
+    color: var(--color-text-dark);
+    margin-bottom: var(--space-xl);
+    border-radius: var(--radius-md);
     padding: 25px;
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: var(--shadow-dark);
 }
 
 .card a, .card a:visited {
@@ -64,12 +78,9 @@ aside {
 }
 
 header {
-    text-align: center;
-    background-color: rgb(58, 57, 57);
-    color: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 5px 5px 15px 5px #000000
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-dark);
+    margin-bottom: var(--space-lg);
 }
 
 nav {

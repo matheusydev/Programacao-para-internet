@@ -41,26 +41,8 @@
                 <article class="card">
                     <h2>Formulários</h2>
                     <h3>Mudar cores da página</h3>
-                    <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff"
-                        onchange="document.body.style.backgroundColor = this.value;">
+                    <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff">
                     <input type="color" id="cor-texto" name="cor-texto">
-
-                    <script>
-
-                        let inputCorTexto = document.getElementById('cor-texto');
-                        let inputCorFundo = document.getElementById('cor-fundo');
-
-                        inputCorTexto.addEventListener('input', () => {
-                            let cor = inputCorTexto.value;
-                            document.body.style.color = cor;
-                        });
-
-                        inputCorFundo.addEventListener('input', () => {
-                            let cor = inputCorFundo.value;
-                            document.body.style.backgroundImage = "none";
-                            document.body.style.backgroundColor = cor;
-                        });
-                    </script>
 
                     <h3>Formulário busca no google</h3>
                     <form action="http://www.google.com/search" method="get">
@@ -372,7 +354,7 @@
                     <p class="ciano">Texto ciano</p>
                     <p class="autor-data">por Ely Miranda em 24/02/2026</p>
                 </article>
-                <article class = "card">
+                <article class="card">
                     <h2>Símbolos e entidades</h2>
 
                     <p>A tag inicial do html é &lt;html&gt; e fecha com &lt;/html&gt;</p>
@@ -382,7 +364,7 @@
                     <p>E&nbsp;m&nbsp;o&nbsp;j&nbsp;i&nbsp;s&nbsp;: &#128512; &#128176;&#128327;</p>
                     <p class="autor-data">por Ely Miranda em 24/02/2026</p>
                 </article>
-                <article class = "card">
+                <article class="card">
                     <h2>Formatações simples</h2>
 
                     <p>Texto em <em>itálico</em></p>
@@ -445,6 +427,7 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     </div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

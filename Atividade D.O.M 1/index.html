@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Exercícios sobre DOM 01</title>
-  <script src="script.js" defer></script>
+  <script src="scripts.js" defer></script>
 </head> 
 <body>
 
@@ -13,13 +13,33 @@
   <button onclick="validar()">Enviar</button>
   <div id="erro"></div>
   
-  <h2> Alterar parágrafos</h2>
- 
+
+  <h2>Alterar parágrafos</h2>
+
+
+  <div id="alterar">
   <p>Primeiro parágrafo.</p>
   <p>Segundo parágrafo.</p>
   <p>Terceiro parágrafo.</p>
- 
+  </div>
+
   <button onclick="alterarParagrafos()">Alterar parágrafos</button>
-  
+
+  <h2>Contar parágrafos</h2>
+ 
+  <div id="contar">
+    <p>'Cause anyone who ever had a brain</p>
+    <p>Wouldn't stand out in the rain</p>
+    <p>Or keep it up for very long</p>
+    <p>Just to prove somebody wrong</p>
+    <p>And anyone who ever had a heart</p>
+    <p>Or sang a lonesome song</p>
+    <p>Would sell their little souls</p>
+    <p>Just to make it with the blonde</p>
+  </div>
+ 
+  <button onclick="contarParagrafos()">Contar parágrafos</button>
+ 
+  <div id="resultado"></div>
 </body>
 </html>

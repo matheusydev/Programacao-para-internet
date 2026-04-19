@@ -11,3 +11,10 @@ inputCorFundo.addEventListener('input', () => {
     document.body.style.backgroundImage = "none";
     document.body.style.backgroundColor = cor;
 });
+
+let menuToggle = document.getElementById("menu-toggle");
+let menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", function () {
+    menu.classList.toggle("ativo");
+});

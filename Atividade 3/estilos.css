@@ -410,3 +410,38 @@ a:focus {
     font-size: 0.8rem;
 }
 
+#menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        margin: 0 20px 20px;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #menu li {
+        display: block;
+        margin: 0;
+    }
+
+    #menu.ativo {
+        display: block;
+    }
+}

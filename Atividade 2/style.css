@@ -152,6 +152,60 @@ li:first-child::before {
     content: "🎵 ";
 }
 
+.menu-postagens h2 {
+    text-align: center;
+    color: #ed2788;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}   
+
+.menu-postagens li:first-child::before {
+    content: none;
+}
+
+.menu-postagens li {
+    background-color: #740645;
+    border-radius: 8px;
+    padding: 8px auto;
+    list-style-type: none;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.menu-postagens li:hover {
+    background-color: #ed2788;
+    transform: scale(1.03);
+}
+
+.menu-postagens .link-menu {
+    position: relative;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+    padding: 5px 0; 
+    border: none;
+}
+
+.menu-postagens .link-menu::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 3px;
+    background-color: #ed2788; 
+    transition: all 300ms ease-in-out; 
+}
+
+.menu-postagens .link-menu:hover {
+    color: #ed2788; 
+}
+
+.menu-postagens .link-menu:hover::after {
+    width: 50%;
+    left: 25%; 
+}
+
 .link-menu{
     text-decoration: none;
     color: #ed2788;
@@ -160,16 +214,6 @@ li:first-child::before {
 
 .link-menu:hover {
     color: #ed2788;
-}
-
-.link-menu {
-    display: inline-block;
-}
-
-.link-menu:hover {
-    transform: translateX(8px);
-    font-size: 1.1rem;
-    font-weight: bold;
 }
 
 .link-menu {
@@ -182,19 +226,22 @@ li:first-child::before {
 }
 
 .rodape-post {
-    position: relative;
-    display: flex;
-    justify-content: center;
+    grid-template-columns: 1fr auto 1fr;
+    display: grid;
     align-items: center;
     padding: 10px 0;
 
 }
 
 .rodape-post .separador {
+    grid-column: 2;
     margin:0
 }
 
 .link-subida { 
+    grid-column: 3;
+    justify-self: end; 
+    
     text-decoration: none;
     color: #ed2788;
     transition: all 0.3s ease;

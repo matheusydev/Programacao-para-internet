@@ -173,7 +173,6 @@ li:first-child::before {
 }
 
 .menu-postagens li:hover {
-    background-color: #ed2788;
     transform: scale(1.03);
 }
 

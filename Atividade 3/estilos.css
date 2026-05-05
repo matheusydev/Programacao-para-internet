@@ -161,7 +161,9 @@ header h1 {
 
 
 
-h1 {}
+/* h1 {
+
+} */
 
 .autor-data {
     text-align: right;
@@ -442,6 +444,22 @@ a:focus {
     }
 
     #menu.ativo {
+        display: block;
+    }
+}
+
+.btn-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .btn-menu { 
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    nav-link.active {
         display: block;
     }
 }

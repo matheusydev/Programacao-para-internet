@@ -18,3 +18,8 @@ let menu = document.getElementById("menu");
 menuToggle.addEventListener("click", function () {
     menu.classList.toggle("ativo");
 });
+
+function toggleMenu() {
+    const nav = document.getElementById('menu');
+    nav.classList.toggle('ativo');
+}

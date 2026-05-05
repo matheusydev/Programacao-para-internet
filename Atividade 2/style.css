@@ -152,13 +152,13 @@ li:first-child::before {
     content: "🎵 ";
 }
 
-.link-menu, .link-subida {
+.link-menu{
     text-decoration: none;
     color: #ed2788;
     transition: all 0.3s ease;
 }
 
-.link-menu:hover, .link-subida:hover {
+.link-menu:hover {
     color: #ed2788;
 }
 
@@ -179,4 +179,28 @@ li:first-child::before {
 
 .link-menu:hover {
     border-left: 4px solid #ed2788;
+}
+
+.rodape-post {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.rodape-post .separador {
+    margin:0
+}
+
+.link-subida { 
+    text-decoration: none;
+    color: #ed2788;
+    transition: all 0.3s ease;
+}
+
+.link-subida:hover {
+    color: #0f479f;
+    font-weight: bold;
 }

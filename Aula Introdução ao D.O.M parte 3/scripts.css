@@ -1,0 +1,16 @@
+body {
+    font-family: arial;
+}
+
+table {
+    width: 50%;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgray;
+}

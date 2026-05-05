@@ -151,3 +151,32 @@ li:first-child::before {
 .lista-musicas li::before {
     content: "🎵 ";
 }
+
+.link-menu, .link-subida {
+    text-decoration: none;
+    color: #ed2788;
+    transition: all 0.3s ease;
+}
+
+.link-menu:hover, .link-subida:hover {
+    color: #ed2788;
+}
+
+.link-menu {
+    display: inline-block;
+}
+
+.link-menu:hover {
+    transform: translateX(8px);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.link-menu {
+    border-left: 4px solid transparent;
+    padding-left: 5px;
+}
+
+.link-menu:hover {
+    border-left: 4px solid #ed2788;
+}

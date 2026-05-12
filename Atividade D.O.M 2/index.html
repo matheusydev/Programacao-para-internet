@@ -1,17 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício DOM 02</title>
+    <link rel="stylesheet" href="estilos.css">
     <script src="scripts.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <button id="botaoErro">Mostrar Erro</button>
-    <div id="mensagemErro" class="oculto">O campo deve ser preenchido</div>
-</body>
 
+    <h1>Exercício DOM 02</h1>
+
+    <div class="questao-container">
+        <h2>Q1: Função de Erro Refatorada</h2>
+        <button id="btnQ1">Mostrar Erro Teste</button>
+        <div id="erroQ1" class="oculto erro"></div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q2: Validação de Campo de Texto</h2>
+        <label for="textoQ2">Digite o texto:</label>
+        <input type="text" id="textoQ2">
+        <button id="btnQ2">Exibir</button>
+        <div id="erroQ2" class="oculto erro"></div>
+        <div id="resultadoQ2" style="margin-top: 10px; font-weight: bold;"></div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q3: Taxa de Engajamento</h2>
+        <input type="text" id="interacoesQ3" placeholder="Nº de Interações">
+        <input type="text" id="visualizacoesQ3" placeholder="Nº de Visualizações">
+        <button id="btnQ3">Calcular</button>
+        <div id="erroQ3" class="oculto erro"></div>
+        <div id="resultadoQ3" style="margin-top: 10px; color: blue; font-weight: bold;"></div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q4: Upload de Imagem</h2>
+        <input type="file" id="uploadQ4" accept="image/*">
+        <button id="btnQ4">Carregar Imagem</button>
+        <div id="erroQ4" class="oculto erro"></div>
+        <div id="resultadoQ4" style="margin-top: 15px;"></div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q5: Carregamento via Select</h2>
+        <label for="selectImgQ5">Escolha uma imagem:</label>
+        <select id="selectImgQ5">
+            <option value="">-- Selecione --</option>
+            <option value="https://via.placeholder.com/150/FF0000/FFFFFF?text=Imagem+1">Vermelha</option>
+            <option value="https://via.placeholder.com/150/00FF00/FFFFFF?text=Imagem+2">Verde</option>
+            <option value="https://via.placeholder.com/150/0000FF/FFFFFF?text=Imagem+3">Azul</option>
+        </select>
+        <div id="resultadoQ5" style="margin-top: 15px;"></div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q6: Redes Sociais Favoritas (Checkbox)</h2>
+        <div id="redesCheckboxContainer">
+            <div><input type="checkbox" id="facebook" name="redesSociais" value="Facebook"><label for="facebook">Facebook</label></div>
+            <div><input type="checkbox" id="twitter" name="redesSociais" value="Twitter"><label for="twitter">Twitter</label></div>
+            <div><input type="checkbox" id="instagram" name="redesSociais" value="Instagram"><label for="instagram">Instagram</label></div>
+        </div>
+        <button id="btnQ6" style="margin-top: 10px;">Enviar Seleção</button>
+        <div id="erroQ6" class="oculto erro"></div>
+        <div id="resultadoQ6" style="margin-top: 10px; font-weight: bold;"></div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q7 a Q9: Gerenciador de Hashtags</h2>
+        <input type="text" id="inputHash" placeholder="#suahashtag">
+        <button id="btnAddHash">Adicionar</button>
+        <button id="btnRemoveHash">Remover Selecionada</button>
+        <div id="erroHash" class="oculto erro"></div>
+        <div style="margin-top: 10px;">
+            <select id="selectHash" size="5" style="min-width: 150px;"></select>
+        </div>
+    </div>
+
+    <div class="questao-container">
+        <h2>Q10 e Q11: Mover Ativos Financeiros</h2>
+        <div id="erroQ11" class="oculto erro" style="margin-bottom: 10px;"></div>
+        <div class="container-ativos">
+            <div class="coluna">
+                <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+                <select id="ativosDisponiveis" size="10" multiple style="width: 200px;">
+                    <option value="AAPL">Apple (AAPL)</option>
+                    <option value="GOOGL">Google (GOOGL)</option>
+                    <option value="AMZN">Amazon (AMZN)</option>
+                    <option value="MSFT">Microsoft (MSFT)</option>
+                    <option value="TSLA">Tesla (TSLA)</option>
+                </select>
+            </div>
+
+            <div class="buttons-ativos">
+                <button id="btnMoverDireita">&gt;&gt;</button>
+                <button id="btnMoverEsquerda">&lt;&lt;</button>
+            </div>
+
+            <div class="coluna">
+                <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+                <select id="carteiraInvestimentos" size="10" multiple style="width: 200px;"></select>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

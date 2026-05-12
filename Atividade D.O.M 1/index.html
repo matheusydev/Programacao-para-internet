@@ -4,42 +4,104 @@
   <meta charset="UTF-8">
   <title>Exercícios sobre DOM 01</title>
   <script src="scripts.js" defer></script>
-</head> 
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-  <h2>Validação de formulário</h2>
+  <h1>Lista de Exercícios DOM</h1>
 
-  <input type="text" id="nome" placeholder="Digite seu nome">
-  <button onclick="validar()">Enviar</button>
-  <div id="erro"></div>
-  
+  <section>
+    <h2>Exemplo: Validação de formulário</h2>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <button onclick="validar()">Enviar</button>
+    <div id="erro"></div>
+  </section>
 
-  <h2>Alterar parágrafos</h2>
+  <section>
+    <h2>Questão 2: Alterar parágrafos</h2>
+    <div id="alterar">
+      <p>Primeiro parágrafo.</p>
+      <p>Segundo parágrafo.</p>
+      <p>Terceiro parágrafo.</p>
+    </div>
+    <button onclick="alterarParagrafos()">Alterar parágrafos</button>
+  </section>
 
+  <section>
+    <h2>Questão 3: Contar parágrafos</h2>
+    <div id="contar">
+      <p>'Cause anyone who ever had a brain</p>
+      <p>Wouldn't stand out in the rain</p>
+      <p>Or keep it up for very long</p>
+      <p>Just to prove somebody wrong</p>
+    </div>
+    <button onclick="contarParagrafos()">Contar parágrafos</button>
+    <div id="resultado" style="margin-top: 10px; font-weight: bold;"></div>
+  </section>
 
-  <div id="alterar">
-  <p>Primeiro parágrafo.</p>
-  <p>Segundo parágrafo.</p>
-  <p>Terceiro parágrafo.</p>
-  </div>
+  <section>
+    <h2>Questão 4: Botões Alterar e Limpar</h2>
+    <p id="paragrafo">Clique no botão abaixo para alterar o texto deste parágrafo:</p>
+    <button id="botao">Alterar Texto</button>
+    <button id="limpar">Limpar Texto</button>
+  </section>
 
-  <button onclick="alterarParagrafos()">Alterar parágrafos</button>
+  <section>
+    <h2>Questão 6: Alterar CSS via DOM</h2>
+    <div id="caixaCor" style="width: 100px; height: 100px; background-color: blue;"></div>
+    <br>
+    <button onclick="mudarCor()">Mudar para Vermelho</button>
+  </section>
 
-  <h2>Contar parágrafos</h2>
- 
-  <div id="contar">
-    <p>'Cause anyone who ever had a brain</p>
-    <p>Wouldn't stand out in the rain</p>
-    <p>Or keep it up for very long</p>
-    <p>Just to prove somebody wrong</p>
-    <p>And anyone who ever had a heart</p>
-    <p>Or sang a lonesome song</p>
-    <p>Would sell their little souls</p>
-    <p>Just to make it with the blonde</p>
-  </div>
- 
-  <button onclick="contarParagrafos()">Contar parágrafos</button>
- 
-  <div id="resultado"></div>
+  <section>
+    <h2>Questão 7: Copiar para Caixa Alta</h2>
+    <input type="text" id="textoOrigem" placeholder="Digite algo">
+    <input type="text" id="textoDestino" placeholder="Resultado" readonly>
+    <button onclick="copiarMaiusculo()">Copiar (Caixa Alta)</button>
+  </section>
+
+  <section>
+    <h2>Questão 8: Alto Contraste</h2>
+    <button onclick="altoContraste()">Ativar Alto Contraste</button>
+    <button onclick="resetarCores()">Resetar Cores</button>
+  </section>
+
+  <section>
+    <h2>Questão 9: Alterar Tamanho da Fonte da Página</h2>
+    <button onclick="alterarFonte(2)">Aumentar Texto (A+)</button>
+    <button onclick="alterarFonte(-2)">Diminuir Texto (A-)</button>
+  </section>
+
+  <section>
+    <h2>Questão 10: Calculadora</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <br><br>
+    <label><input type="radio" name="operacao" id="soma" checked> Soma (+) </label><br>
+    <label><input type="radio" name="operacao" id="subtracao"> Subtração (-) </label><br>
+    <label><input type="radio" name="operacao" id="multiplicacao"> Multiplicação (*) </label><br>
+    <label><input type="radio" name="operacao" id="divisao"> Divisão (/) </label><br>
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <p>Resultado: <strong id="resCalc">0</strong></p>
+  </section>
+
+  <section>
+    <h2>Questão 11: Adicionar à Lista Não Ordenada</h2>
+    <input type="text" id="novoItemLista" placeholder="Item da lista">
+    <button onclick="adicionarNaLista()">Adicionar</button>
+    <ul id="minhaLista"></ul>
+  </section>
+
+  <section>
+    <h2>Questão 12: Adicionar ao Select</h2>
+    <input type="text" id="novoItemSelect" placeholder="Opção do select">
+    <button onclick="adicionarNoSelect()">Adicionar</button>
+    <br><br>
+    <select id="meuSelect">
+      <option value="" disabled selected>Selecione um item...</option>
+    </select>
+  </section>
+
 </body>
 </html>
